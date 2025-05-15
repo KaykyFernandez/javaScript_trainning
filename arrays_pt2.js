@@ -12,6 +12,9 @@ const movie = [       //localizando array de referencia
 
 console.log(movie.includes({id: 2, movieName: 'Back to the future'}))
 
-console.log(movie.find(function(movie){        //função procurarar o item
+console.log(movie.find(function(movie){        //função procurar o item
     return movie.movieName == 'The Matrix'
 }))
+
+console.log(movie.find(movie => movie.movieName == 'The Matrix'))//arrow function
+                           //^ function e return incluso
